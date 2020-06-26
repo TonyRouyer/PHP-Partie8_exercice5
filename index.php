@@ -1,4 +1,5 @@
 <?php
+    //si un souveau password est set , il modifie le cookie existant
     if ( isset($_POST['password'])){
         setcookie('password', $_POST['password'], time() + 365*24*3600, '/');
     }
